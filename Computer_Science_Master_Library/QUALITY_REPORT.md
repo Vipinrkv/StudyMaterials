@@ -29,6 +29,7 @@
 | **Level 6 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (Vector Clocks/Raft/2PC/ECC/AdamW) | 100% (Spanner, etcd, Bitcoin, PyTorch) | **PASSED** |
 | **Level 6 (Batch 2: CH06-10)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (Autograd/RoPE/BM25/Bloom/HPA) | 100% (vLLM, RocksDB, HuggingFace, K8s) | **PASSED** |
 | **Level 6 Capstone Project** | 1 Capstone Pack | 100% (Spec + Engine + Test)| 100% (Nexus Distributed Engine)| 100% (Raft Quorum/LSM Bloom/RRF Hybrid) | 100% (Spanner, Cassandra, Kubernetes) | **PASSED** |
+| **Level 7 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (MultiPaxos/Fencing/ABS/FoR/BurnRate) | 100% (Spanner, Flink, ClickHouse, Google SRE) | **PASSED** |
 
 ---
 
