@@ -32,6 +32,8 @@
 | **Level 7 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (MultiPaxos/Fencing/ABS/FoR/BurnRate) | 100% (Spanner, Flink, ClickHouse, Google SRE) | **PASSED** |
 | **Level 7 (Batch 2: CH06-10)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (vLLM Paging/PSI/ITCH/LLVM SSA/SPIFFE)| 100% (vLLM, Feast, NASDAQ, LLVM, SPIRE) | **PASSED** |
 | **Level 7 Capstone Project** | 1 Capstone Pack | 100% (Spec + Engine + Test)| 100% (Axiom Trading Engine) | 100% (Paxos Quorum/Disruptor/VWAP/mTLS) | 100% (NASDAQ ITCH, LMAX, SPIFFE, Flink) | **PASSED** |
+| **Level 8 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (TLA+ Invariants/Intervals/GEMM Tiling/HotStuff 3-Chain/DPO Bradley-Terry) | 100% (AWS S3, Meta Katran, NVIDIA H100, Aptos, Anthropic SAE) | **PASSED** |
+
 
 ---
 
