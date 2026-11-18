@@ -8,44 +8,46 @@
 - **Milestone 5 (Level 4: Advanced Undergraduate):** ✅ **100% COMPLETED & VERIFIED** (10 Chapters, 10 Labs, Capstone `AegisDB`, 2 Revision Sheets).
 - **Milestone 6 (Level 5: Professional Software Engineering):** ✅ **100% COMPLETED & VERIFIED** (10 Chapters, 10 Labs, Capstone `StratosPlatform`, 2 Revision Sheets).
 - **Milestone 7 (Level 6: Postgraduate Advanced — Distributed Systems & Intelligence):** ✅ **100% COMPLETED & VERIFIED** (10 Chapters, 10 Labs, Capstone `NexusEngine`, 2 Revision Sheets).
-- **Milestone 8 (Level 7: Specialist & Expert Engineering — Scale, Reliability & SRE):** 🟡 **Batch 1 (CH01-05) COMPLETED & VERIFIED** (5 Chapters, 5 Labs, 1 Revision Sheet).
+- **Milestone 8 (Level 7: Specialist & Expert Engineering — Scale, Reliability & SRE):** ✅ **100% COMPLETED & VERIFIED** (10 Chapters, 10 Labs, Capstone `AxiomEngine`, 2 Revision Sheets).
+- **Milestone 9 (Level 8: Master Engineer & Researcher — Advanced Systems & Formal Methods):** 🔴 **QUEUED (Batch 1: CH01-05)**
 
 ---
 
-## 📌 Exact Next Task: Level 7 — Batch 2 (Chapters 06 to 10)
-Target Directory: `07_LEVEL_7_SPECIALIST_EXPERT/`
+## 📌 Exact Next Task: Level 8 — Batch 1 (Chapters 01 to 05)
+Target Directory: `08_LEVEL_8_MASTER_ENGINEER_RESEARCHER/`
 
-1. `CH06_FRONTIER_MODEL_SERVING_VLLM_AND_KV_CACHE_OPTIMIZATION.md`:
-   - Memory fragmentation in LLM inference, PagedAttention (vLLM) block table paging.
-   - Continuous batching (iteration-level scheduling) vs static request batching.
-   - Speculative decoding with small draft models, acceptance verification algorithms.
-   - Tensor Parallelism (Megatron-LM style) and Pipeline Parallelism across GPUs.
-2. `CH07_MLOPS_PIPELINES_FEATURE_STORES_AND_MODEL_REGISTRIES.md`:
-   - Point-in-time correct feature retrieval, online vs offline feature stores (Feast, Hopsworks).
-   - Automated model tracking, lineage, artifact versioning (MLflow, Kubeflow Pipelines).
-   - Concept drift and covariate shift mathematical detection (KS-Test, Population Stability Index / PSI).
-   - Model shadow deployments, canary routing, and automated rollback policies.
-3. `CH08_ULTRA_LOW_LATENCY_SYSTEMS_AND_HIGH_FREQUENCY_TRADING.md`:
-   - Sub-microsecond systems engineering: Linux kernel bypass (Solarflare OpenOnload, DPDK, AF_XDP).
-   - CPU cache-line alignment, hardware false sharing, lock-free ring buffers (LMAX Disruptor).
-   - Memory allocation avoidance: Zero-allocation memory pools, cache warming, CPU core pinning (isolcpus).
-   - Financial exchange protocol gateways: FIX protocol, ITCH market data parser, OUCH order entry.
-4. `CH09_COMPILER_CONSTRUCTION_LLVM_IR_AND_JIT_OPTIMIZATION.md`:
-   - Modern compiler architectures: Frontend AST -> LLVM Intermediate Representation (LLVM-IR).
-   - Static Single Assignment (SSA) form, $\phi$-nodes (phi functions), dominance frontiers.
-   - Optimization passes: Dead Code Elimination (DCE), Common Subexpression Elimination (CSE), Loop Invariant Code Motion (LICM).
-   - JIT compilation tiering, deoptimization (deopt/bailout), and dynamic On-Stack Replacement (OSR).
-5. `CH10_ZERO_TRUST_ARCHITECTURE_AND_ENTERPRISE_CYBER_DEFENSE.md`:
-   - BeyondCorp Zero-Trust framework: Context-aware continuous identity and device authorization.
-   - SPIFFE/SPIRE (Secure Production Identity Framework for Everyone) cryptographic X.509 SVIDs.
-   - Mutual TLS (mTLS) service-to-service cryptographic mesh enforcement.
-   - Automated Threat Modeling (STRIDE, MITRE ATT&CK), secret rotation, and hardware security modules (HSM / KMS).
+1. `CH01_FORMAL_SPECIFICATION_TLA_PLUS_AND_MODEL_CHECKING.md`:
+   - State space exploration, temporal logic of actions (TLA+), PlusCal translator.
+   - Specifying safety invariants ($\Box P$) and liveness properties ($\Diamond P$, $\Box \Diamond P$, leads-to $\rightsquigarrow$).
+   - TLC model checker, state symmetry sets, deadlocks, and counterexample trace analysis.
+   - Case studies: Verifying distributed consensus (Paxos/Raft) and concurrent ring buffers.
+2. `CH02_LINUX_KERNEL_INTERNALS_EBPF_AND_IO_URING.md`:
+   - eBPF in-kernel bytecode architecture, verifier register tracking, and safety constraints.
+   - BPF maps (hash, per-CPU, ringbuf), BPF CO-RE (Compile Once - Run Everywhere), BTF.
+   - `io_uring` submission and completion queues, SQPOLL thread, registered buffers, zero-copy I/O.
+   - High-performance packet processing via XDP (eXpress Data Path) and TC (Traffic Control).
+3. `CH03_HPC_AND_GPU_ARCHITECTURE_CUDA_PROGRAMMING.md`:
+   - GPU hardware microarchitecture: Streaming Multiprocessors (SMs), Warp schedulers, tensor cores.
+   - CUDA programming model: Grid, thread block, thread hierarchy, memory spaces (global, shared, register, constant).
+   - Warp divergence, memory coalescing, bank conflicts in shared memory.
+   - High-throughput parallel primitives: Parallel scan (Blelloch), parallel reduction, tiled matrix multiplication (GEMM).
+4. `CH04_BYZANTINE_FAULT_TOLERANCE_AND_MODERN_BFT_CONSENSUS.md`:
+   - Byzantine failure models: Malicious nodes, message tampering, equivocation, $3f + 1$ quorum lower bounds.
+   - Classical PBFT (Practical Byzantine Fault Tolerance): Pre-prepare, prepare, commit phases, view changes.
+   - Modern chained BFT: Tendermint and HotStuff (pipelined views, linear view change complexity $O(n)$).
+   - Cryptographic threshold signatures (BLS), verifiable random functions (VRF), and state machine replication.
+5. `CH05_FRONTIER_AI_SAFETY_ALIGNMENT_AND_INTERPRETABILITY.md`:
+   - Mechanistic interpretability: Residual stream linear representation, induction heads, circuit discovery.
+   - Representation engineering: Activation steering, sparse autoencoders (SAE) for feature dictionary extraction.
+   - RLHF & Direct Preference Optimization (DPO): Reward modeling, Bradley-Terry preference loss, KL divergence penalty.
+   - Adversarial robustness: Jailbreak taxonomies, automated red teaming, gradient-based attack vectors (GCG).
 
 ---
 
 ### Strict Execution Standards:
 - All chapters must strictly implement the standard **24-Section Format** without skipping any section.
-- Ground explanations in deep architectural, mathematical, and industrial reality (vLLM, Feast, LMAX Disruptor, LLVM, SPIFFE).
-- Include complete companion Python programming laboratory scripts in `11_PROGRAMMING_LAB/level_7/`.
+- Ground explanations in deep formal, mathematical, and kernel/silicon reality (TLA+, eBPF, CUDA, HotStuff, Anthropic SAE).
+- Include complete companion Python/C programming laboratory scripts in `11_PROGRAMMING_LAB/level_8/`.
 - Ensure 100% automated test verification (Exit Code 0).
+
 
