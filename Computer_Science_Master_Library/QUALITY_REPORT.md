@@ -33,11 +33,12 @@
 | **Level 7 (Batch 2: CH06-10)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (vLLM Paging/PSI/ITCH/LLVM SSA/SPIFFE)| 100% (vLLM, Feast, NASDAQ, LLVM, SPIRE) | **PASSED** |
 | **Level 7 Capstone Project** | 1 Capstone Pack | 100% (Spec + Engine + Test)| 100% (Axiom Trading Engine) | 100% (Paxos Quorum/Disruptor/VWAP/mTLS) | 100% (NASDAQ ITCH, LMAX, SPIFFE, Flink) | **PASSED** |
 | **Level 8 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (TLA+ Invariants/Intervals/GEMM Tiling/HotStuff 3-Chain/DPO Bradley-Terry) | 100% (AWS S3, Meta Katran, NVIDIA H100, Aptos, Anthropic SAE) | **PASSED** |
-
+| **Level 8 (Batch 2: CH06-10)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (HDR P99/OR-Set/Born Rule/LIF Dynamics/Curry-Howard Proofs) | 100% (Gil Tene, Figma, IBM Quantum, Intel Loihi, Lean 4 Mathlib) | **PASSED** |
+| **Level 8 Capstone Project** | 1 Capstone Pack | 100% (Spec + Engine + Test)| 100% (Aethelgard Runtime) | 100% (Curry-Howard/TLA+ State/HotStuff/OR-Set/LIF/Bell Qubits) | 100% (Lean 4, TLA+, Aptos, Yjs, SpiNNaker, Qiskit) | **PASSED** |
 
 ---
 
-## 🔬 Practical Lab Scripts Validation Evidence (Levels 4, 5, 6 & 7 Capstones)
+## 🔬 Practical Lab Scripts Validation Evidence (Levels 4, 5, 6, 7 & 8 Capstones)
 
 | Lab Script | Purpose | Test Status | Execution Evidence |
 | :--- | :--- | :--- | :--- |
@@ -46,13 +47,14 @@
 | `stratos_verifier.py` | Stratos Microservices Mesh | ✅ **PASSED** | Validated HMAC-SHA256 constant-time token verification with tamper rejection, continuous Token Bucket rate limiter blocking volumetric burst floods with HTTP 429 semantics, W3C traceparent standard distributed context generation and extraction (`00-{trace_id}-{span_id}-01`), happy-path 3-phase Saga transaction committing orders, debiting balances and decrementing inventory with zero discrepancy, out-of-stock failure initiating automated reverse compensating transactions (refunding payment and cancelling order), AWS Full Jitter exponential backoff recovering flaky downstream calls, Michael Nygard Circuit Breaker FSM tripping to OPEN upon 3 consecutive failures to fast-fail traffic and transitioning via HALF_OPEN canary probes to CLOSED upon recovery, Bulkhead concurrency pool partitioning, Prometheus multi-dimensional metric recording (Counters, Gauges, Latency Quantiles), and Google SRE multiwindow error budget burn rate alerting firing SEV-1 pages (B=14.4x) and SEV-2 ticket warnings (B=6.0x) with zero invariant violations. |
 | `nexus_verifier.py` | Nexus Distributed Neural Engine | ✅ **PASSED** | Validated 3-node Raft consensus leader election, log replication across follower quorum, LSM-Tree ingestion with MemTable flushing to persistent binary SSTables, Bloom filter point lookup acceleration with zero false negatives, tombstone deletion masking across on-disk runs, hybrid neural RAG combining dense Cosine Similarity and sparse Okapi BM25 with Reciprocal Rank Fusion (RRF, k=60), and minority network partition healing with automatic log catch-up with zero invariant violations. |
 | `axiom_verifier.py` | Axiom Trading & Streaming Engine | ✅ **PASSED** | Validated 5-node Multi-Paxos consensus leader election and Phase 2 accept quorum, generation fencing token rejection of zombie leader split-brain writes, Level-3 Limit Order Book with binary NASDAQ ITCH message decoding and dynamic Best Bid and Offer (BBO) recomputation, lock-free LMAX Disruptor power-of-two circular ring buffer with bitwise masking sequence wrapping, event-time tumbling window Volume-Weighted Average Price (VWAP) calculation triggered deterministically by watermarks ($T_{\max} - \Delta$), Two-Phase Commit transactional sink, and zero-trust SPIFFE/SPIRE mutual TLS authentication with automated short-lived X.509 SVID expiry rejection across all 6 test suites with zero invariant violations. |
+| `aethelgard_verifier.py` | Aethelgard Verified Hybrid Runtime | ✅ **PASSED** | Validated Curry-Howard constructive logic proof certificate generator for propositional tautologies, explicit-state model checker BFS exploring Peterson's algorithm state space with zero invariant violations, HotStuff 3-chain pipelined BFT consensus with 2f+1 threshold quorum certificates and cryptographic equivocation trapping, state-based Add-Wins Observed-Removed Set (OR-Set) CRDT strong eventual consistency convergence across network partitions, Leaky Integrate-and-Fire (LIF) neuromorphic spiking dynamics and membrane reset, and 2-qubit quantum statevector circuit simulation generating Bell state entanglement ($|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$) across all 6 test suites with zero invariant violations. |
 
 ---
 
-## 📝 Compliance Audit Checklist (Level 7 100% Complete)
-- [x] All 10 Level 7 chapters adhere strictly to the 24-Section Standard Format with zero skipped sections.
-- [x] Level 7 Capstone integrates all core disciplines (Multi-Paxos Consensus, Generation Fencing Tokens, Disruptor Ring Buffers, Level-3 ITCH Order Book, Event-Time Watermarked VWAP Streaming, SPIFFE/SVID Zero-Trust Security) into a unified production architecture (`AxiomTradingEngine`).
-- [x] Fencing token invariants, ITCH binary unpacking, out-of-order event-time watermarking, and cryptographic SVID expiry verified with automated tests.
-- [x] 100% automated test pass rate across all 11 Level 7 lab and capstone testbeds.
+## 📝 Compliance Audit Checklist (Level 8 100% Complete)
+- [x] All 10 Level 8 chapters adhere strictly to the 24-Section Standard Format with zero skipped sections.
+- [x] Level 8 Capstone integrates all core disciplines (Curry-Howard Logic, TLA+ State Exploration, HotStuff BFT Consensus, SEC CRDTs, Neuromorphic LIF Dynamics, Quantum Circuit Emulation) into a unified verified architecture (`AethelgardRuntime`).
+- [x] Commutativity of joins, 3-chain commit rules, Born rule measurement probabilities, and LIF membrane potential settling verified with automated tests.
+- [x] 100% automated test pass rate across all 11 Level 8 lab and capstone testbeds (Exit Code 0).
 
 
