@@ -35,6 +35,8 @@
 | **Level 8 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (TLA+ Invariants/Intervals/GEMM Tiling/HotStuff 3-Chain/DPO Bradley-Terry) | 100% (AWS S3, Meta Katran, NVIDIA H100, Aptos, Anthropic SAE) | **PASSED** |
 | **Level 8 (Batch 2: CH06-10)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (HDR P99/OR-Set/Born Rule/LIF Dynamics/Curry-Howard Proofs) | 100% (Gil Tene, Figma, IBM Quantum, Intel Loihi, Lean 4 Mathlib) | **PASSED** |
 | **Level 8 Capstone Project** | 1 Capstone Pack | 100% (Spec + Engine + Test)| 100% (Aethelgard Runtime) | 100% (Curry-Howard/TLA+ State/HotStuff/OR-Set/LIF/Bell Qubits) | 100% (Lean 4, TLA+, Aptos, Yjs, SpiNNaker, Qiskit) | **PASSED** |
+| **Level 9 (Batch 1: CH01-05)** | 5 Chapters | 100% (24/24 per ch.) | 100% (5 Python testbeds) | 100% (Affine Borrows/TrueTime/HLC/Ochiai SBFL/Debt NPV/Toffoli Bijection) | 100% (Rust Polonius, Google Spanner, Amazon SOA, IBM Quantum) | **PASSED** |
+
 
 ---
 
